@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Passatemps Sudoku</string>
+    <string name="play">Jugar</string>
+    <string name="maxScores">Maximes Puntuacions</string>
+    <string name="game_name">Passatemps Sudoku</string>
+    <string name="item_score_name">Nombre</string>
+</resources>
