@@ -18,13 +18,29 @@ public class Score implements Comparable {
         this();
         setValue(value);
     }
+<<<<<<< HEAD
     public Score(int value, Date date) {
         this(value);
+=======
+    public Score(int id, int value) {
+        this(value);
+        setId(id);
+    }
+    public Score(int id, int value, Date date) {
+        this(id, value);
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
         setDate(date);
     }
 
     public int getId() {
+<<<<<<< HEAD
         return (int) getDate().getTime();
+=======
+        return _id;
+    }
+    public void setId(int id) {
+        _id = id;
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
     }
     public int getValue() {
         return _value;
@@ -47,6 +63,10 @@ public class Score implements Comparable {
     @Override
     public boolean equals(@NonNull Object obj) {
         if(!(obj instanceof Score)) return false;
+<<<<<<< HEAD
         return ((Score) obj).getDate().equals(getDate());
+=======
+        return getId() == ((Score) obj).getId();
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
     }
 }

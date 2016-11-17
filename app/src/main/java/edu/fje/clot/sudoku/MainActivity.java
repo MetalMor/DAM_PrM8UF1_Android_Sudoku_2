@@ -7,7 +7,6 @@ import android.widget.ListView;
 
 import edu.fje.clot.sudoku.Util.Util;
 import edu.fje.clot.sudoku.adapter.ScoreAdapter;
-import edu.fje.clot.sudoku.bean.Score;
 import edu.fje.clot.sudoku.bean.list.ScoreList;
 
 public class MainActivity extends AppCompatActivity {

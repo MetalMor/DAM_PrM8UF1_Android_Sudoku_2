@@ -1,6 +1,7 @@
 package edu.fje.clot.sudoku.adapter;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,15 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 import edu.fje.clot.sudoku.R;
+=======
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
 import edu.fje.clot.sudoku.bean.Score;
 import edu.fje.clot.sudoku.bean.list.ScoreList;
 
@@ -23,6 +33,7 @@ public class ScoreAdapter extends BaseAdapter {
 
     private Context _context;
     private ScoreList _scores = new ScoreList();
+<<<<<<< HEAD
     private SimpleDateFormat _dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
     private LayoutInflater _inflater;
     private int[] _images;
@@ -32,6 +43,10 @@ public class ScoreAdapter extends BaseAdapter {
         setScores(scores);
         setImages(images);
     }
+=======
+
+    // TODO: imagenes
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
 
     @Override
     public int getCount() {
@@ -50,6 +65,7 @@ public class ScoreAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+<<<<<<< HEAD
         setInflater((LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE));
         View itemView = getInflater().inflate(R.layout.item_score_list, viewGroup, false);
 
@@ -65,6 +81,9 @@ public class ScoreAdapter extends BaseAdapter {
         if(i < 3) vImage.setImageResource(getImages()[i]);
 
         return itemView;
+=======
+        return null; // TODO: get view
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
     }
 
     public Score getScore(int i) {
@@ -84,6 +103,7 @@ public class ScoreAdapter extends BaseAdapter {
     public void setScores(ScoreList scores) {
         _scores = scores == null ? new ScoreList() : scores;
     }
+<<<<<<< HEAD
     public int[] getImages() {
         return _images;
     }
@@ -102,4 +122,6 @@ public class ScoreAdapter extends BaseAdapter {
     public void setDateFormat(SimpleDateFormat dateFormat) {
         _dateFormat = dateFormat;
     }
+=======
+>>>>>>> 9e92d2f8dc47a947862ff339c11882f4d69d790a
 }
