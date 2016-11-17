@@ -29,17 +29,21 @@ public class ScoreAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return getScores().get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return getScore(i).getId();
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+        return null; // TODO: get view
+    }
+
+    public Score getScore(int i) {
+        return (Score) getItem(i);
     }
 
     public Context getContext() {
